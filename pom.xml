@@ -56,6 +56,12 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -89,5 +95,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<site>
+			<id>mvnown</id>
+			<url>file://D:/nexus</url>
+		</site>
+	</distributionManagement>
 
 </project>

@@ -12,16 +12,15 @@ import javax.persistence.Table;
 public class Stock {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column
-	private int stockId;
+	private int StockId;
 	
 	@Column
-	private String stockName;
+	private String StockName;
 	@Column
-	private double stockValue;
+	private double StockValue;
 	@Column
-	private String stockSymbol;
+	private String StockSymbol;
 	@Column
-	private double stockPrice;
+	private double StockPrice;
 	
 }
