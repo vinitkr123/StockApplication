@@ -1,0 +1,7 @@
+Stock Payload
+{
+    "stockName": "ABC",
+    "stockValue": 1252,
+    "stockSymbol": "GOOG",
+    "stockPrice": 121
+}
