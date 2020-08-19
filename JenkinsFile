@@ -19,7 +19,7 @@ pipeline {
                                   
 					echo "PASSWORD =${PASSWORD}"
                     bat 'cf login -a http://api.run.pivotal.io -u %USERNAME% -p %PASSWORD%'
-                    bat 'cf target -s production'
+                    bat 'cf target -s development'
                     bat 'cf push'
                 }
             }
