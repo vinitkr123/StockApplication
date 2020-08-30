@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Required;
+
 @Entity
 @Table
 public class Stock {
@@ -14,7 +16,7 @@ public class Stock {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int StockId;
 	
-	@Column
+	@Column(nullable = false,unique = true)
 	private String StockName;
 	public int getStockId() {
 		return StockId;
@@ -48,9 +50,9 @@ public class Stock {
 	}
 	@Column
 	private double StockValue;
-	@Column
+	@Column(nullable = false)
 	private String StockSymbol;
-	@Column
+	@Column(nullable = false)
 	private double StockPrice;
 	
 }

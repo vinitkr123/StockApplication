@@ -10,16 +10,14 @@ import com.stock.portfolio.model.Stock;
 
 @Service
 public class StockServiceImpl implements StockService {
-	
 
-@Autowired
-private StockDaoRepo StockDaoRepo;
-	
+	@Autowired
+	private StockDaoRepo StockDaoRepo;
+
 	@Override
 	public List<Stock> addStock(Stock stock) {
-		
-		StockDaoRepo.save(stock);
-		
+
+		Stock save = StockDaoRepo.save(stock);
 		return findAllStocks();
 	}
 

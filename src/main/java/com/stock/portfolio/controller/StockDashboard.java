@@ -21,9 +21,7 @@ public class StockDashboard {
 	@PostMapping("/addStock")
 	public List<Stock> addStock(@RequestBody Stock stock)
 	{
-		
-		stockService.addStock(stock);
-		return Arrays.asList(stock);
+		return stockService.addStock(stock);
 	}
 	
 	
