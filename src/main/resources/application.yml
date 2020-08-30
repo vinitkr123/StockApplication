@@ -1,9 +1,9 @@
 server:
-  port: 8081
+  port: 8083
   
-spring:  datasource:    url: jdbc:mysql://localhost:3306/sampledb
+spring:  datasource:    url: jdbc:mysql://localhost:3306/stock
     username: root
-    password: vinit
+    password: N0tall0wed
     driver-class-name: com.mysql.cj.jdbc.Driver
       application:    name: dashboard
       

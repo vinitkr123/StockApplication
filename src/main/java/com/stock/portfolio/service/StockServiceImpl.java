@@ -2,6 +2,7 @@ package com.stock.portfolio.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.stock.portfolio.dao.StockDaoRepo;
@@ -9,8 +10,10 @@ import com.stock.portfolio.model.Stock;
 
 @Service
 public class StockServiceImpl implements StockService {
+	
 
-	private StockDaoRepo StockDaoRepo;
+@Autowired
+private StockDaoRepo StockDaoRepo;
 	
 	@Override
 	public List<Stock> addStock(Stock stock) {
