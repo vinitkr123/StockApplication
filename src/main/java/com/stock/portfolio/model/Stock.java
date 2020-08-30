@@ -16,7 +16,7 @@ public class Stock {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int StockId;
 	
-	@Column(nullable = false,unique = true)
+	@Column(nullable = false,unique = false)
 	private String StockName;
 	public int getStockId() {
 		return StockId;
