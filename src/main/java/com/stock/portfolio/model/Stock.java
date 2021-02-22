@@ -12,7 +12,9 @@ import org.springframework.beans.factory.annotation.Required;
 @Entity
 @Table
 public class Stock {
-	@Id
+
+
+	@IdPrimary
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int StockId;
 	
